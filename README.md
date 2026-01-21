@@ -25,4 +25,4 @@ Para evitar restricciones de seguridad del navegador (CORS/Private Network Acces
 
 ---
 
-**Hosting demo online (Solo Visualización):** https://stalwart-bienenstitch-9c0d57.netlify.app/
+**Hosting demo online (Solo Visualización):** https://gleeful-babka-a16bc0.netlify.app/
