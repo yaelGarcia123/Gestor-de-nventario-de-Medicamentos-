@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yakle\\source\\repos\\Apimedigroup\\Apimedigroup\\Apimedigroup.csproj": {}
+    "C:\\Users\\yakle\\OneDrive\\Documentos\\Gestor-de-Inventarios-Medicamentos\\backend\\Apimedigroup\\Apimedigroup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yakle\\source\\repos\\Apimedigroup\\Apimedigroup\\Apimedigroup.csproj": {
+    "C:\\Users\\yakle\\OneDrive\\Documentos\\Gestor-de-Inventarios-Medicamentos\\backend\\Apimedigroup\\Apimedigroup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yakle\\source\\repos\\Apimedigroup\\Apimedigroup\\Apimedigroup.csproj",
+        "projectUniqueName": "C:\\Users\\yakle\\OneDrive\\Documentos\\Gestor-de-Inventarios-Medicamentos\\backend\\Apimedigroup\\Apimedigroup.csproj",
         "projectName": "Apimedigroup",
-        "projectPath": "C:\\Users\\yakle\\source\\repos\\Apimedigroup\\Apimedigroup\\Apimedigroup.csproj",
+        "projectPath": "C:\\Users\\yakle\\OneDrive\\Documentos\\Gestor-de-Inventarios-Medicamentos\\backend\\Apimedigroup\\Apimedigroup.csproj",
         "packagesPath": "C:\\Users\\yakle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yakle\\source\\repos\\Apimedigroup\\Apimedigroup\\obj\\",
+        "outputPath": "C:\\Users\\yakle\\OneDrive\\Documentos\\Gestor-de-Inventarios-Medicamentos\\backend\\Apimedigroup\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

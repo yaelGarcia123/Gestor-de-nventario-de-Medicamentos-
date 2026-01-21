@@ -1,36 +1,28 @@
-# 💊 Gestor de Inventario de Medicamentos - Medigroup
+# Gestor de Inventario de Medicamentos - Medigroup
 
-Este es un proyecto FullStack desarrollado como parte de la evaluación técnica para **Medigroup del Pacífico**. La aplicación permite la gestión completa (CRUD) de inventarios de medicamentos, incluyendo filtros avanzados de búsqueda.
+Proyecto desarrollado para la evaluación técnica de Medigroup del Pacífico.
 
-## 🚀 Tecnologías Utilizadas
+## Cómo ejecutar el proyecto
 
-### Frontend
-
-- [cite_start]**HTML5 & CSS3**: Estructura y diseño responsivo[cite: 11].
-- [cite_start]**Bootstrap 5**: Framework de estilos para una interfaz moderna[cite: 11].
-- [cite_start]**JavaScript (Vanilla) & jQuery**: Lógica de cliente y manipulación del DOM[cite: 9, 10].
-- [cite_start]**AJAX**: Consumo de la API REST[cite: 12].
-
-### Backend
-
-- [cite_start]**ASP.NET Core Web API**: Creación de servicios RESTful[cite: 15, 16].
-- **Entity Framework Core**: ORM para la gestión de la base de datos.
-- [cite_start]**SQL Server**: Motor de base de datos relacional[cite: 18].
-
----
-
-## 🛠️ Configuración y Ejecución
+Para evitar restricciones de seguridad del navegador (CORS/Private Network Access) al conectar un sitio web público con una base de datos local
 
 ### 1. Base de Datos
 
-Ejecute el siguiente script en su instancia de **SQL Server** para crear la tabla necesaria:
+1. Abra **SQL Server Management Studio**.
+2. Ejecute el script `script_db.sql` incluido en la raíz de este repositorio para crear la tabla `Medicamentos`.
 
-```sql
-CREATE TABLE Medicamentos (
-    id INT IDENTITY(1,1) PRIMARY KEY,
-    nombre VARCHAR(255) NOT NULL,
-    categoria VARCHAR(100) NOT NULL,
-    cantidad INT NOT NULL,
-    fecha_expiracion DATE NOT NULL
-);
-```
+### 2. Backend (API .NET)
+
+1. Abra la carpeta `backend` y ejecute el archivo `Apimedigroup.sln` con **Visual Studio**.
+2. En el archivo `appsettings.json`, asegúrese de que la cadena de conexión coincida con su servidor local (DefaultConnection).
+3. Presione **F5** para iniciar la API. Se abrirá una ventana de Swagger en `https://localhost:7231`.
+
+### 3. Frontend
+
+1. Navegue a la carpeta `front-end`.
+2. Abra el archivo `index.html` directamente en su navegador.
+3. Y **¡Listo!** Al estar ambos componentes en el mismo entorno local, podrá realizar el CRUD completo, filtros y búsquedas sin bloqueos de seguridad.
+
+---
+
+**Demo Online (Solo Visualización):** https://stalwart-bienenstitch-9c0d57.netlify.app/
