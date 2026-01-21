@@ -1,7 +1,7 @@
 ﻿using Apimedigroup.Data;
 using Apimedigroup.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore; // IMPORTANTE: Para ToListAsync() y EntityState
+using Microsoft.EntityFrameworkCore;
 
 namespace Apimedigroup.Controllers
 {
@@ -13,7 +13,7 @@ namespace Apimedigroup.Controllers
 
         public MedicamentosController(AppDbContext context) => _context = context;
 
-        // GET: api/Medicamentos (Incluye búsqueda y filtros)
+        // get- api/Medicamentos (obtener con filtros opcionales)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Medicamento>>> GetMedicamentos(string? nombre, string? categoria, DateTime? fechaExpiracion)
         {
@@ -32,7 +32,7 @@ namespace Apimedigroup.Controllers
             return await query.ToListAsync();
         }
 
-        // POST: api/Medicamentos (Crear)
+        // post - api/Medicamentos(crear)
         [HttpPost]
         public async Task<ActionResult<Medicamento>> PostMedicamento(Medicamento medicamento)
         {
@@ -41,7 +41,7 @@ namespace Apimedigroup.Controllers
             return CreatedAtAction(nameof(GetMedicamentos), new { id = medicamento.Id }, medicamento);
         }
 
-        // PUT: api/Medicamentos/5 (Editar) <--- ESTO TE FALTABA
+        // put : api/Medicamentos/5 (editar) 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMedicamento(int id, Medicamento medicamento)
         {
@@ -62,7 +62,7 @@ namespace Apimedigroup.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Medicamentos/5 (Eliminar)
+        // delete : api/Medicamentos/5 (eliminar)
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMedicamento(int id)
         {

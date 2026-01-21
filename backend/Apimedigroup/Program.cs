@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. CONFIGURACI”N DE LA BASE DE DATOS
+// configuraci√≥n de la cadena de conexi√≥n a la base de datos SQL Server
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// 2. CONFIGURACI”N DE CORS (Para que el Frontend pueda hablar con el Backend)
+// configuraci√≥n de CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -26,7 +26,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// 3. USAR LA POLÕTICA DE CORS
+// usamos la pol√≠tica de CORS
 app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment())
