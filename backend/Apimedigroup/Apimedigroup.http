@@ -1,0 +1,6 @@
+@Apimedigroup_HostAddress = http://localhost:5226
+
+GET {{Apimedigroup_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
