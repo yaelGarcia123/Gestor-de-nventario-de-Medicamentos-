@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Apimedigroup")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b8d1980d569e8dcb1f10310d98bd3f24d84d211")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dfef98193cc49272f54714d8d030d402fdf3591")]
 [assembly: System.Reflection.AssemblyProductAttribute("Apimedigroup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Apimedigroup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,7 +11,7 @@ Para evitar restricciones de seguridad del navegador (CORS/Private Network Acces
 1. Abra **SQL Server Management Studio**.
 2. Ejecute el script `script_db.sql` incluido en la raíz de este repositorio para crear la tabla `Medicamentos`.
 
-### 2. Backend (API .NET)
+### 2. Backend (api.net)
 
 1. Abra la carpeta `backend` y ejecute el archivo `Apimedigroup.sln` con **Visual Studio**.
 2. En el archivo `appsettings.json`, asegúrese de que la cadena de conexión coincida con su servidor local (DefaultConnection).
@@ -25,4 +25,4 @@ Para evitar restricciones de seguridad del navegador (CORS/Private Network Acces
 
 ---
 
-**Demo Online (Solo Visualización):** https://stalwart-bienenstitch-9c0d57.netlify.app/
+**Hosting demo online (Solo Visualización):** https://stalwart-bienenstitch-9c0d57.netlify.app/
